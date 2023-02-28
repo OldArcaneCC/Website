@@ -1,0 +1,1443 @@
+<!doctype html>
+<html>
+<head>
+    
+    
+    
+    
+    <script src="https://web.archive.org/web/20180904124346js_/https://code.jquery.com/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://web.archive.org/web/20180904124346js_/https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="" crossorigin="anonymous"></script>
+    <link href="https://web.archive.org/web/20180904124346cs_/https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <link href="https://web.archive.org/web/20180904124346cs_/https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/web/20180904124346im_/http://arcane.cc/resources/favicon/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="/web/20180904124346im_/http://arcane.cc/resources/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="/web/20180904124346im_/http://arcane.cc/resources/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/web/20180904124346im_/http://arcane.cc/resources/favicon/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/web/20180904124346im_/http://arcane.cc/resources/favicon/favicon-128.png" sizes="128x128"/>
+    <link href="//web.archive.org/web/20180904124346cs_/http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//web.archive.org/web/20180904124346js_/http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/web/20180904124346cs_/http://arcane.cc/resources/app.css">
+    <script src="/web/20180904124346js_/http://arcane.cc/resources/typeahead.min.js"></script>
+    <script src="/web/20180904124346js_/http://arcane.cc/resources/bloodhound.js"></script>
+    <script src="/web/20180904124346js_/http://arcane.cc/resources/app.js"></script>
+    <title>Practice Leaderboards | Arcane Network</title>
+    
+    <script src="/web/20180904124346js_/http://arcane.cc/resources/leaderboards/leaderboards.js"></script>
+    <link type="text/css" rel="stylesheet" href="/web/20180904124346cs_/http://arcane.cc/resources/leaderboards/leaderboards.css">
+    
+    <script src="/web/20180904124346js_/http://arcane.cc/resources/leaderboards/practice/practice.js"></script>
+    <link type="text/css" rel="stylesheet" href="/web/20180904124346cs_/http://arcane.cc/resources/leaderboards/practice/practice.css">
+
+
+</head>
+<body>
+<div id="wrapper">
+    <header id="header">
+        <div class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/web/20180904124346/http://arcane.cc/" class="navbar-brand">
+                        <img class="img-responsive" src="/web/20180904124346im_/http://arcane.cc/resources/images/nav-logo.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/web/20180904124346/http://arcane.cc/forums/">Forums</a></li>
+                        <li><a href="/web/20180904124346/http://arcane.cc/leaderboards/">Leaderboards</a></li>
+                        <li><a href="/web/20180904124346/http://arcane.cc/staff">Staff</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        
+
+                        
+                        <div id="languages" class="dropdown">
+                            <div class="btn dropdown-toggle" id="language-switch" data-toggle="dropdown">
+                                
+                                    <span style="opacity: 0.5;"><img src="https://web.archive.org/web/20180904124346im_/https://www.countryflags.io/us/flat/16.png"></span></span>
+                                
+                            </div>
+                            <ul class="dropdown-menu" style="color: black;">
+                                
+                                
+                                    <li>
+                                        <a href="/web/20180904124346/http://arcane.cc/language/en-US">English</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/web/20180904124346/http://arcane.cc/language/es-MX">español</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                        <li><a target="_blank" href="https://web.archive.org/web/20180904124346/https://store.arcane.cc/">Store</a></li>
+                        <div id="search-form" class="navbar-form navbar-left " role="search">
+                            <div class="form-group" style="position: relative;">
+                                <i class="fa fa-search"></i>
+                                <input id="search" name="username" type="text" class="form-control typeahead" placeholder="search..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                            </div>
+                        </div>
+                        
+                            <li><a id="login" href="/web/20180904124346/http://arcane.cc/login">Login</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+    <div class="text-center">
+        <h1>Leaderboards</h1>
+        <h2>Fight your way to the top!</h2>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="container-body">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div id="content" class="row">
+                        
+    <div class="col-md-12">
+        <div id="settings">
+            <div id="select">Select a gamemode</div>
+            <div id="arrow"></div>
+            <ul>
+                <li class="active"><a href="/web/20180904124346/http://arcane.cc/practice">Practice</a></li>
+                <li><a href="/web/20180904124346/http://arcane.cc/squads">Squads</a></li>
+                <li><a href="/web/20180904124346/http://arcane.cc/kitmap">Kit Map</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4 stat-board-parent">
+                <div class="stat-board" id="elo-board">
+                    <div class="heading">
+                        <div class="dropdown">
+                            <div class="btn dropdown-toggle" id="ladder-toggle" data-toggle="dropdown">
+                                <span id="ladder">Global</span> ELO <span class="caret"></span>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)" class="ladder-loader" data-target="GLOBAL">Global</a>
+                                </li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="DEBUFF">Debuff</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="NODEBUFF">No Debuff</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="ARCHER">Archer</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="SOUP">Soup</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="AXE">Axe</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="GAPPLE">Gapple</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="SUMO">Sumo</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="BUILDUHC">BuildUHC</a></li>
+                                
+                                    <li><a href="javascript:void(0)" class="ladder-loader" data-target="SPLEEF">Spleef</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Amount</th>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>
+                                    <div>1</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/SameAim">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sm5SLC7tk9YcsPOdJhOLvlYq_DBTueuUm8PjCdnseczM=/https://visage.surgeplay.com/face/16/98b85fc9-7a9d-4768-a3de-a27f560b2503.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">SameAim</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1234</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>2</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/knee">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,saJJLGuKPUSNFC4eyA7BdsznWNuu53LjU5f_qmnF6zGE=/https://visage.surgeplay.com/face/16/dfd6b52d-441b-4c68-ba4b-201288b9d22f.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">knee</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1221</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>3</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/REEQN">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sCoUCeZunqbH4yKytvIrjLhORLQcQWBgyitd9xtQf964=/https://visage.surgeplay.com/face/16/643e0bca-df4f-41d3-a321-fc8855f5cb09.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">REEQN</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1203</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>4</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Chriiii">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,svODsHXSXdluUUDYVcLjiyGBlmjan0Kzf-OpQBmXFcnQ=/https://visage.surgeplay.com/face/16/3fa817b4-2194-44eb-b5e9-1385cf7cf288.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">Chriiii</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1177</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>5</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/FIASCO_">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sehFEeiq7m1WA9Y5UsWENe16QN5PcTOwB2daZ-A2ax6k=/https://visage.surgeplay.com/face/16/ef302664-acfd-4daa-972d-cfe2e13b2b9b.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">FIASCO_</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1160</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>6</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/GANGMEMBERREECH">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sSLTH9QXpqRGJbuw1j6sUaZqeql9304LGc3-nmKJIyu8=/https://visage.surgeplay.com/face/16/d0302f5d-7eb6-420a-ab3d-dcb24bc9ae21.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">GANGMEMBERREECH</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1150</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>7</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Manowar">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s3DOJyFpg2xnw6J3Kdirz-_yszvdftsIj8cxU0i4zbGg=/https://visage.surgeplay.com/face/16/3df220b3-393b-41a4-a4c3-ef5cd1d75172.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">Manowar</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1132</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>8</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/SecretAgentRexed">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sFk6vJxTMtofDjvXP6GxbXvPb5KcjzrwTgIWwfclphLc=/https://visage.surgeplay.com/face/16/29a6e728-4f68-4077-a355-cf5f180ee278.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">SecretAgentRexed</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1131</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>9</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/RivalryMC">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sTFg-C5166lY83rrNRnONeqf16OsbDq9iSEOXWdJNuBI=/https://visage.surgeplay.com/face/16/6b54996d-ff73-4d8f-88f9-dac743382c3e.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">RivalryMC</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1125</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>10</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Zeniho">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sQjYBaCNpxVNLtJAPrYrLWgpw0J58YuL6Kfvz7aRf7gk=/https://visage.surgeplay.com/face/16/9586e307-9c55-4302-92aa-0ad1f4a8f76d.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username elo-username">Zeniho</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1120</td>
+                                
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4 stat-board-parent">
+                <div class="stat-board">
+                    <div class="heading">
+                        Most Kills
+                    </div>
+                    <table>
+                        <thead>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Amount</th>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>
+                                    <div>1</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/BillyPlayzMC_YT">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,slJtaJPbVeLsysEobEWYUY2sjR-x2RxYO52JKkkmP3sA=/https://visage.surgeplay.com/face/16/08104040-3725-49bf-9b68-daca83f2d74a.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">BillyPlayzMC_YT</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2619</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>2</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/tHaTeqR">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s-xcmGm6qF3NKQh5yVkd6UBX3_uA78hMeVJe5mZKjr5M=/https://visage.surgeplay.com/face/16/134d87e0-bad5-4c1e-96ac-375b018dc2e8.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">tHaTeqR</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2464</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>3</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/saidus2000">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s1k7V6lvrD8hNGEAPrRtuxCCWWMXX4Mk9H0qht6O1du4=/https://visage.surgeplay.com/face/16/803276d9-1cd0-432c-b207-948e457e003e.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">saidus2000</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2336</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>4</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Venkyo">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,ss2RQQAFLz3hj70xbPK4A9Wm1hmM5NfaerGpJ5LdFkkI=/https://visage.surgeplay.com/face/16/ce4bc302-a8b4-4158-9c83-5a8ba181313b.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Venkyo</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2189</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>5</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/TheSqmu_">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s5vpbnaELctpc16EZNWPN8yU0-3BvZrAWeTO2DLJhRSg=/https://visage.surgeplay.com/face/16/3edd0788-a58c-406a-9dc8-8cfc85537874.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">TheSqmu_</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2089</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>6</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/BeFour6">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sVV0vwLom3_tJQbPNYy-PSmk7TvRmXAcDgxqXErUURFc=/https://visage.surgeplay.com/face/16/1e28a880-71b6-4ff6-80e2-def4aa0de76a.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">BeFour6</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2059</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>7</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/CrypticPenguin">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sPOfqobFzwf6OIXkjNT-SyHrMyKSsRZUQkMIqTLGHazE=/https://visage.surgeplay.com/face/16/c5fad94c-55c0-4e7e-818b-f7245ca8562d.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">CrypticPenguin</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1811</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>8</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Zyphing">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sIVM79dQ-Y7N1VlzEIhFqemsXZT06KoNMhmHAGoyvsMM=/https://visage.surgeplay.com/face/16/09c86f39-0d4b-4a51-a7b2-aa1d8c0f06f1.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Zyphing</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1525</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>9</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Hiilho">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s9TZezHo1K1n8RHquXkAQcytAsuW--9_4mObMYgJMx6E=/https://visage.surgeplay.com/face/16/8654535b-c43e-45b8-b9f6-734d3a6b84f3.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Hiilho</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1516</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>10</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/iceman3711">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sB1aPycRpNeSOJjXh9LLphGpzlzLlfq5jjE0rIFgLUNs=/https://visage.surgeplay.com/face/16/80d55bf5-3e34-4454-b2cf-7282740209c4.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">iceman3711</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1288</td>
+                                
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4 stat-board-parent">
+                <div class="stat-board">
+                    <div class="heading">
+                        Most Deaths
+                    </div>
+                    <table>
+                        <thead>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Amount</th>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>
+                                    <div>1</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Starcreepz">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s9iNYmGHWPcE-gq8jzpYruOu5apvgfFBJ6LkXojMMcYA=/https://visage.surgeplay.com/face/16/3f370e18-d3f4-4a62-943f-bebdfc897bcb.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Starcreepz</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2337</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>2</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/PepitoGamer20_FG">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,skQ8eDm-MOUpQOGFWDCzDco5QRKgF9xTkVL0UvJGGUvs=/https://visage.surgeplay.com/face/16/7c4d45c7-fe71-4669-b811-592277256794.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">PepitoGamer20_FG</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1479</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>3</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/steferyang">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sakbVXLJTlaMgW1x5f29LvLLMZ6bMCDLoUmCjuITXGSw=/https://visage.surgeplay.com/face/16/0dbd35ce-d539-4247-a23a-2e247a7d4c41.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">steferyang</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1334</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>4</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/hassanxp">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,srChihXMST_XJWTU-Tk84vqvvVBdFQtsYO_nbPs96OXw=/https://visage.surgeplay.com/face/16/c833542f-8cbc-4ede-be80-50cd6b30e046.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">hassanxp</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1212</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>5</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Azert">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sBBqjXlSvUQbxVkEdeT9AAIXHJv0G0Q-ydmndemxeXGQ=/https://visage.surgeplay.com/face/16/eb1d3ee7-8748-4336-a3b2-28d530ea706e.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Azert</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1204</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>6</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/JoeyThaGamer">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,snhT76nXm4KqDu6fbes0CPLnoGJ0mEsqraSXPEwIWmKI=/https://visage.surgeplay.com/face/16/96f5585e-17a1-44ae-91f7-acab6bda2943.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">JoeyThaGamer</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1149</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>7</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/ILoveArchyBot">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sldrO_-z9WGqZ2kLvimL78YHkicRuyELbe2VINfqzFt8=/https://visage.surgeplay.com/face/16/a037f67f-8af2-49c8-920a-8b152823cd4e.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">ILoveArchyBot</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1148</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>8</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Favorless">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sio1E3pXR6lVXacADWpGQAJr6FDdBGzHz1K7NmMHHBLo=/https://visage.surgeplay.com/face/16/6389db34-08a8-408e-ace9-f4c5311c26f7.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Favorless</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1104</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>9</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Nutellcraft">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sHddtxAjyT7eJwqB6ZMPg_mrLWCG_5qUytfDVweYFpKE=/https://visage.surgeplay.com/face/16/e4ad6ec6-7b11-4ffd-96c0-c7ce5fa1445d.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Nutellcraft</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1071</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>10</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Sonic__Livanates">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,suFNhC6QDCV2o-S2CVr1TIq8HenLl5TLv-tl112cAUnc=/https://visage.surgeplay.com/face/16/b3814432-d650-4e61-b7c4-d1dc9bf767ee.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Sonic__Livanates</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1063</td>
+                                
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4 stat-board-parent">
+                <div class="stat-board">
+                    <div class="heading">
+                        Most Wins
+                    </div>
+                    <table>
+                        <thead>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Amount</th>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>
+                                    <div>1</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/BillyPlayzMC_YT">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,slJtaJPbVeLsysEobEWYUY2sjR-x2RxYO52JKkkmP3sA=/https://visage.surgeplay.com/face/16/08104040-3725-49bf-9b68-daca83f2d74a.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">BillyPlayzMC_YT</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2865</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>2</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/tHaTeqR">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s-xcmGm6qF3NKQh5yVkd6UBX3_uA78hMeVJe5mZKjr5M=/https://visage.surgeplay.com/face/16/134d87e0-bad5-4c1e-96ac-375b018dc2e8.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">tHaTeqR</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2569</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>3</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/saidus2000">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s1k7V6lvrD8hNGEAPrRtuxCCWWMXX4Mk9H0qht6O1du4=/https://visage.surgeplay.com/face/16/803276d9-1cd0-432c-b207-948e457e003e.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">saidus2000</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2518</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>4</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Venkyo">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,ss2RQQAFLz3hj70xbPK4A9Wm1hmM5NfaerGpJ5LdFkkI=/https://visage.surgeplay.com/face/16/ce4bc302-a8b4-4158-9c83-5a8ba181313b.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Venkyo</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2268</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>5</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/TheSqmu_">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s5vpbnaELctpc16EZNWPN8yU0-3BvZrAWeTO2DLJhRSg=/https://visage.surgeplay.com/face/16/3edd0788-a58c-406a-9dc8-8cfc85537874.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">TheSqmu_</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2164</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>6</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/zurtin">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sWdnyW2ErYOCdp0jGjT7Oe8PWAxkS4nxUGt8PKosS07o=/https://visage.surgeplay.com/face/16/653b0e98-115d-4c7f-946c-4b06a0f0a352.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">zurtin</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2083</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>7</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/CrypticPenguin">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sPOfqobFzwf6OIXkjNT-SyHrMyKSsRZUQkMIqTLGHazE=/https://visage.surgeplay.com/face/16/c5fad94c-55c0-4e7e-818b-f7245ca8562d.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">CrypticPenguin</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1934</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>8</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/BeFour6">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sVV0vwLom3_tJQbPNYy-PSmk7TvRmXAcDgxqXErUURFc=/https://visage.surgeplay.com/face/16/1e28a880-71b6-4ff6-80e2-def4aa0de76a.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">BeFour6</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1883</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>9</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Hiilho">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s9TZezHo1K1n8RHquXkAQcytAsuW--9_4mObMYgJMx6E=/https://visage.surgeplay.com/face/16/8654535b-c43e-45b8-b9f6-734d3a6b84f3.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Hiilho</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1570</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>10</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Zyphing">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sIVM79dQ-Y7N1VlzEIhFqemsXZT06KoNMhmHAGoyvsMM=/https://visage.surgeplay.com/face/16/09c86f39-0d4b-4a51-a7b2-aa1d8c0f06f1.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Zyphing</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1496</td>
+                                
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4 stat-board-parent">
+                <div class="stat-board">
+                    <div class="heading">
+                        Most Losses
+                    </div>
+                    <table>
+                        <thead>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Amount</th>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>
+                                    <div>1</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Starcreepz">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s9iNYmGHWPcE-gq8jzpYruOu5apvgfFBJ6LkXojMMcYA=/https://visage.surgeplay.com/face/16/3f370e18-d3f4-4a62-943f-bebdfc897bcb.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Starcreepz</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>2390</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>2</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/PepitoGamer20_FG">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,skQ8eDm-MOUpQOGFWDCzDco5QRKgF9xTkVL0UvJGGUvs=/https://visage.surgeplay.com/face/16/7c4d45c7-fe71-4669-b811-592277256794.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">PepitoGamer20_FG</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1485</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>3</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/steferyang">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sakbVXLJTlaMgW1x5f29LvLLMZ6bMCDLoUmCjuITXGSw=/https://visage.surgeplay.com/face/16/0dbd35ce-d539-4247-a23a-2e247a7d4c41.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">steferyang</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1386</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>4</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/ILoveArchyBot">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sldrO_-z9WGqZ2kLvimL78YHkicRuyELbe2VINfqzFt8=/https://visage.surgeplay.com/face/16/a037f67f-8af2-49c8-920a-8b152823cd4e.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">ILoveArchyBot</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1336</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>5</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Azert">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sBBqjXlSvUQbxVkEdeT9AAIXHJv0G0Q-ydmndemxeXGQ=/https://visage.surgeplay.com/face/16/eb1d3ee7-8748-4336-a3b2-28d530ea706e.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Azert</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1280</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>6</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/hassanxp">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,srChihXMST_XJWTU-Tk84vqvvVBdFQtsYO_nbPs96OXw=/https://visage.surgeplay.com/face/16/c833542f-8cbc-4ede-be80-50cd6b30e046.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">hassanxp</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1218</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>7</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Favorless">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sio1E3pXR6lVXacADWpGQAJr6FDdBGzHz1K7NmMHHBLo=/https://visage.surgeplay.com/face/16/6389db34-08a8-408e-ace9-f4c5311c26f7.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Favorless</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1184</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>8</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Astonify">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s-iOs2YTAGEt_0Q2d_udX8P8CjYY1ufHydeU4YTNh-Gs=/https://visage.surgeplay.com/face/16/04ec9c99-1a23-4039-8aea-37610d248d31.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Astonify</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1169</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>9</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/JoeyThaGamer">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,snhT76nXm4KqDu6fbes0CPLnoGJ0mEsqraSXPEwIWmKI=/https://visage.surgeplay.com/face/16/96f5585e-17a1-44ae-91f7-acab6bda2943.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">JoeyThaGamer</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1164</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>10</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Sonic__Livanates">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,suFNhC6QDCV2o-S2CVr1TIq8HenLl5TLv-tl112cAUnc=/https://visage.surgeplay.com/face/16/b3814432-d650-4e61-b7c4-d1dc9bf767ee.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Sonic__Livanates</div>
+                                    </a></div>
+                                </td>
+                                
+                                    <td>1157</td>
+                                
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4 stat-board-parent">
+                <div class="stat-board">
+                    <div class="heading">
+                        Highest KDR
+                    </div>
+                    <table>
+                        <thead>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Amount</th>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td>
+                                    <div>1</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/ImAFuckingCat">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,szkd4lBSIPtW9igFdximWwPWjeDl8MyECk75bhA9Hbtg=/https://visage.surgeplay.com/face/16/ef4fecbc-f815-4631-9dba-27799b54e28b.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">ImAFuckingCat</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>57.0</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>2</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/7ej">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sFkTS_iv1fBWxneEe42yHo86khIXxnhafLpoghyG_5lY=/https://visage.surgeplay.com/face/16/ac3a7e2a-90be-4865-9d54-cff0cf6c4a47.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">7ej</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>55.67</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>3</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Fervano">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sAQlcXmG2CB6bvv_uloZoBuBwiszUAcyFZrTmPi5qUpQ=/https://visage.surgeplay.com/face/16/bf80130d-a5fd-4351-9e54-916e7b582bb8.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Fervano</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>47.0</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>4</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/bjhalt">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sC-vCxUn5ub0hq8l6c8FINSv3u0R0-YMlArsvvpH-yIM=/https://visage.surgeplay.com/face/16/a300be08-208a-4920-a8ff-9598b8a91874.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">bjhalt</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>44.0</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>5</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/UnexpectedBeast">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sh7_CAcvrh4BP3aj91vOcYPUzgJyLhxzFZy-sjslJsdc=/https://visage.surgeplay.com/face/16/fb78e21e-ed0f-467f-a2ac-61e9b8a4e9a7.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">UnexpectedBeast</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>44.0</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>6</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Powerout3165">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,siz3yvaKbXVEbmtbAyVKiXtBmEKm6-QmzvMULBGbuTiw=/https://visage.surgeplay.com/face/16/922b190c-e1a2-4732-b892-23ba186abf8d.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Powerout3165</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>42.5</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>7</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/50red50">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sW8CoKee34nRAEa300SLEcqVnvXLSns908jF4--UivGw=/https://visage.surgeplay.com/face/16/5404453f-8f9d-48e5-959b-b1c7841e6eca.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">50red50</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>42.0</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>8</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/crimsonwfox">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,sDJC5C3xKpChYUTC__YLo-XFbb84CH5i5orNVVaUGwgI=/https://visage.surgeplay.com/face/16/54636cfb-23bf-4f7f-bb50-795094be8d3b.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">crimsonwfox</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>34.0</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>9</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/GoofballBri">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,scscRDjCZO4xoZ2Hi-_N4dTP9Q0-uXO1clorIi_lyDYU=/https://visage.surgeplay.com/face/16/72495956-7f8f-4d2d-a69b-8c60bb684daf.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">GoofballBri</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>33.0</td>
+                                    
+                                
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <div>10</div>
+                                </td>
+                                <td>
+                                    <div><a href="/web/20180904124346/http://arcane.cc/u/Brutal">
+                                        
+                                        
+                                            <div class="stat-board-image" style="background: url('https://web.archive.org/web/20180904124346im_/https://cache.hylist.net/png,s7gpyt0etkqCkz_3dNmR5-McJxA_VBMr6en1vKng2kOE=/https://visage.surgeplay.com/face/16/d61efec3-4fe8-4fbb-8de3-e139f8deebcf.png')"></div>
+                                        
+                                    
+                                        <div class="stat-board-username">Brutal</div>
+                                    </a></div>
+                                </td>
+                                
+                                    
+                                        <td>32.0</td>
+                                    
+                                
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <a href="https://web.archive.org/web/20180904124346/http://hylistgames.com/"><img src="/web/20180904124346im_/http://arcane.cc/resources/images/footer-logo.png"></a>
+            <ul>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,789 @@
+<html><head>
+
+
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-128.png" sizes="128x128">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="resources/app.css">
+    <script src="resources/typeahead.min.js"></script>
+    <script src="resources/bloodhound.js"></script>
+    <script src="resources/app.js"></script>
+    <title>Forums | Arcane Network</title>
+    
+    <link href="resources/forums/forums.css" rel="stylesheet" type="text/css">
+    <script src="resources/forums/forums.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="navbar-brand">
+                        <img class="img-responsive" src="resources/images/nav-logo.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="leaderboards/">Leaderboards</a></li>
+                        <li><a href="forums/">Forums</a></li>
+                        <li><a href="staff">Staff</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        
+
+                        
+                        <div id="languages" class="dropdown">
+                            <div class="btn dropdown-toggle" id="language-switch" data-toggle="dropdown">
+                                
+                                    <span style="opacity: 0.5;"><img src="https://www.countryflags.io/us/flat/16.png"></span>
+                                
+                            </div>
+                            <ul class="dropdown-menu" style="color: black;">
+                                
+                                
+                                    <li>
+                                    
+                                    </li>
+                                
+                                    <li>
+                                    
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                        <li><a target="_blank" href="https://store.veltpvp.com/">Store</a></li>
+                        <div id="search-form" class="navbar-form navbar-left " role="search">
+                            <div class="form-group" style="position: relative;">
+                                <i class="fa fa-search"></i>
+                                <input id="search" name="username" type="text" class="form-control typeahead" placeholder="search..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                            </div>
+                        </div>
+                        
+                            <li><a id="login" href="login">Login</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+    <div class="text-center">
+        <h1>Forums</h1>
+        <h2>Have Your Say</h2>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="container-body">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div id="content" class="row">
+                        
+    <div id="forums-container">
+        <div id="forums">
+            
+                <table class="forum-group">
+                    <colgroup>
+                        <col span="1" style="width: 50%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>Arcane Network</th>
+                        <th>Posts</th>
+                        <th>Replies</th>
+                        <th>Latest Post</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                        
+                            <tr class="forum">
+                                <td colspan="4">
+                                    <table class="forum-segment">
+                                        <colgroup>
+                                            <col span="1" style="width: 50%;">
+                                            <col span="1" style="width: 10%;">
+                                            <col span="1" style="width: 10%;">
+                                            <col span="1" style="width: 30%;">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="forum-info">
+                                                    <h1>
+                                                        <a href="forums/overview">Overview</a>
+                                                    </h1>
+                                                    <span>View posts from all forums</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>1013</div>
+                                            </td>
+                                            <td>
+                                                <div>2304</div>
+                                            </td>
+
+                                            
+                                                
+                                                    <td class="forum-latest-parent">
+                                                        <div class="forum-latest">
+                                                            <div>
+                                                                <a href="thread/1015/blacklisted_goodbye" class="title">
+                                                                    <div><span>Blacklisted.. goodbye.</span></div>
+                                                                </a>
+                                                                <div>
+                                                                    <a href="u/TempXD" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/13842474b52f47cd8a8688752084eea7.png?size=64px&amp;overlay">&nbsp;TempXD
+                                                                    </a>
+                                                                </div>
+                                                                <div class="time">an hour ago</div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                
+                                            
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        
+                    
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/announcements">Announcements</a>
+                                                </h1>
+                                                <span>Official announcements</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>9</div>
+                                        </td>
+                                        <td>
+                                            <div>299</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/958/mediumhcf_sotw_saturday_1pm_est" class="title">
+                                                                <div><span>MediumHCF SOTW (Saturday 1PM EST)</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/lKOS" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/55eab50b037949c2ab15e9465afb7792.png?size=64px&amp;overlay">&nbsp;lKOS
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">3&nbsp;days, 23&nbsp;hours ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            
+                <table class="forum-group">
+                    <colgroup>
+                        <col span="1" style="width: 50%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>Community</th>
+                        <th>Posts</th>
+                        <th>Replies</th>
+                        <th>Latest Post</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/general_discussion">General Discussion</a>
+                                                </h1>
+                                                <span>Talk about anything here - Follow the server rules</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>255</div>
+                                        </td>
+                                        <td>
+                                            <div>394</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/1015/blacklisted_goodbye" class="title">
+                                                                <div><span>Blacklisted.. goodbye.</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/TempXD" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/13842474b52f47cd8a8688752084eea7.png?size=64px&amp;overlay">&nbsp;TempXD
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">an hour ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/faction_recruitment">Faction Recruitment</a>
+                                                </h1>
+                                                <span>Find new members for your faction!</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>186</div>
+                                        </td>
+                                        <td>
+                                            <div>787</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/1005/piston__lff" class="title">
+                                                                <div><span>Piston - LFF</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/Piston" class="creator" style="color: #CCCCCC"><img src="https://crafatar.com/avatars/f149fc0a54f44b31a6398e09ce1dd609.png?size=64px&amp;overlay">&nbsp;Piston
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">19&nbsp;hours ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/media">Media</a>
+                                                </h1>
+                                                <span>Post your videos here!</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>138</div>
+                                        </td>
+                                        <td>
+                                            <div>85</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/996/bl4stymineman__railed_ranked_fight_l_bypassing_lunar_client_" class="title">
+                                                                <div><span>Bl4styMineman ~ Railed [Ranked Fight] l Bypassing Lunar Client ?</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/neoneyy" class="creator" style="color: #666699"><img src="https://crafatar.com/avatars/1491222dd1374c39b98ed78f0b501d1d.png?size=64px&amp;overlay">&nbsp;neoneyy
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">1&nbsp;day, 4&nbsp;hours ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/suggestions">Suggestions</a>
+                                                </h1>
+                                                <span>Have an idea? Share it with us!</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>112</div>
+                                        </td>
+                                        <td>
+                                            <div>386</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/1011/character_limitations" class="title">
+                                                                <div><span>Character limitations</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/Incompatibles" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/55dc0baf0a8a46b08a2889bf97a6c668.png?size=64px&amp;overlay">&nbsp;Incompatibles
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">12&nbsp;hours ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            
+                <table class="forum-group">
+                    <colgroup>
+                        <col span="1" style="width: 50%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 10%;">
+                        <col span="1" style="width: 30%;">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>Gamemodes</th>
+                        <th>Posts</th>
+                        <th>Replies</th>
+                        <th>Latest Post</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/hcf">HCF</a>
+                                                </h1>
+                                                <span>Talk about HCF!</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>82</div>
+                                        </td>
+                                        <td>
+                                            <div>115</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/988/casual_recruitment_for_mini" class="title">
+                                                                <div><span>[Casual] Recruitment for Mini</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/billwurtz" class="creator" style="color: #0F52BA"><img src="https://crafatar.com/avatars/196d2e1311044928b68a765b4633b2a1.png?size=64px&amp;overlay">&nbsp;billwurtz
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">2&nbsp;days, 6&nbsp;hours ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/practice">Practice</a>
+                                                </h1>
+                                                <span>Talk about Practice!</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>127</div>
+                                        </td>
+                                        <td>
+                                            <div>144</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/1013/ban_appeal" class="title">
+                                                                <div><span>Ban Appeal</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/zSmoky" class="creator" style="color: #666699"><img src="https://crafatar.com/avatars/0fda11683a034ef6a5a9388072819b2c.png?size=64px&amp;overlay">&nbsp;zSmoky
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">6&nbsp;hours ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                        <tr class="forum">
+                            <td colspan="4">
+                                <table class="forum-segment">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 10%;">
+                                        <col span="1" style="width: 30%;">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="forum-info">
+                                                <h1>
+                                                    <a href="forums/kitmap">KitMap</a>
+                                                </h1>
+                                                <span>Talk about KitMap!</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>104</div>
+                                        </td>
+                                        <td>
+                                            <div>94</div>
+                                        </td>
+
+                                        
+                                            
+                                                <td class="forum-latest-parent">
+                                                    <div class="forum-latest">
+                                                        <div>
+                                                            <a href="thread/1014/ban_appeal" class="title">
+                                                                <div><span>Ban Appeal</span></div>
+                                                            </a>
+                                                            <div>
+                                                                <a href="u/Cyberbully69" class="creator" style="color: #666699"><img src="https://crafatar.com/avatars/cce2ed796c8f47f69997157c82f03438.png?size=64px&amp;overlay">&nbsp;Cyberbully69
+                                                                </a>
+                                                            </div>
+                                                            <div class="time">6&nbsp;hours ago</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            
+                                        
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            
+        </div>
+        <div id="sidebar">
+            
+            
+                <div class="element">
+                    <div class="heading">Trending Threads</div>
+                    <ul id="latest-threads">
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1007/ban_appeal" class="title">
+                                            <div><span>Ban Appeal</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/8ef14d7042e24fddb03002f1c1bf81f0.png?size=64px&amp;overlay">&nbsp;Coordless
+                                            </a>
+                                        </div>
+                                        <div class="time">15&nbsp;hours ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1015/blacklisted_goodbye" class="title">
+                                            <div><span>Blacklisted.. goodbye.</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/13842474b52f47cd8a8688752084eea7.png?size=64px&amp;overlay">&nbsp;TempXD
+                                            </a>
+                                        </div>
+                                        <div class="time">an hour ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1014/ban_appeal" class="title">
+                                            <div><span>Ban Appeal</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #666699"><img src="https://crafatar.com/avatars/cce2ed796c8f47f69997157c82f03438.png?size=64px&amp;overlay">&nbsp;Cyberbully69
+                                            </a>
+                                        </div>
+                                        <div class="time">6&nbsp;hours ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1013/ban_appeal" class="title">
+                                            <div><span>Ban Appeal</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #666699"><img src="https://crafatar.com/avatars/0fda11683a034ef6a5a9388072819b2c.png?size=64px&amp;overlay">&nbsp;zSmoky
+                                            </a>
+                                        </div>
+                                        <div class="time">6&nbsp;hours ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+            
+                <div class="element">
+                    <div class="heading">Latest Activity</div>
+                    <ul id="latest-threads">
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1007/ban_appeal" class="title">
+                                            <div><span>Ban Appeal</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/8ef14d7042e24fddb03002f1c1bf81f0.png?size=64px&amp;overlay">&nbsp;Coordless
+                                            </a>
+                                        </div>
+                                        <div class="time">41&nbsp;minutes ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1015/blacklisted_goodbye" class="title">
+                                            <div><span>Blacklisted.. goodbye.</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #AA0000"><img src="https://crafatar.com/avatars/13842474b52f47cd8a8688752084eea7.png?size=64px&amp;overlay">&nbsp;TempXD
+                                            </a>
+                                        </div>
+                                        <div class="time">an hour ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1014/ban_appeal" class="title">
+                                            <div><span>Ban Appeal</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #666699"><img src="https://crafatar.com/avatars/cce2ed796c8f47f69997157c82f03438.png?size=64px&amp;overlay">&nbsp;Cyberbully69
+                                            </a>
+                                        </div>
+                                        <div class="time">6&nbsp;hours ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="thread/1013/ban_appeal" class="title">
+                                            <div><span>Ban Appeal</span></div>
+                                        </a>
+                                        <div>
+                                            <a href="#" class="creator" style="color: #666699"><img src="https://crafatar.com/avatars/0fda11683a034ef6a5a9388072819b2c.png?size=64px&amp;overlay">&nbsp;zSmoky
+                                            </a>
+                                        </div>
+                                        <div class="time">6&nbsp;hours ago</div>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <a href="http://hylistgames.com/"><img src="resources/images/footer-logo.png"></a>
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="famous">Famous</a></li>
+                <!-- <li><a href="#">Rules</a></li> -->
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+</body><whale-quicksearch translate="no"></whale-quicksearch></html>

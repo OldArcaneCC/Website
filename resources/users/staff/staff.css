@@ -1,0 +1,248 @@
+.staff-members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.staff-member-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+
+.staff-member {
+    flex: 1;
+    text-decoration: none !important;
+    min-width: calc(25% - 15px);
+    margin-bottom: 15px;
+    margin-right: 15px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .13);
+}
+
+.staff-member h1 {
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    color: #181818;
+}
+
+.staff-member h2 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-indent: 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.staff-member svg {
+    transform: scale(0.85);
+    margin-top: -8px;
+}
+
+.staff-member.small svg {
+    margin-top: -17.5px;
+    transform: scale(0.66);
+}
+
+.staff-member.small {
+    min-width: calc(25% - 15px);
+}
+
+.staff-member.small h1 {
+    margin-top: -7.5px;
+    font-size: 16px;
+}
+
+.staff-member.small h2 {
+    font-size: 8px;
+}
+
+.staff-head {
+    transform: scale(0.9) translateX(5%) translateY(5%);
+    text-align: center;
+}
+
+.staff-head-border {
+    background-color: white;
+}
+
+.staff-head img {
+    display: block;
+    width: 125%;
+    height: 125%;
+    text-align: left;
+    margin-left: -8px;
+}
+
+#search-toolbar {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fafafa;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .13);
+    border-radius: 6px;
+}
+
+#search-toolbar input {
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 1px solid #ECECEC;
+    flex: 1;
+}
+
+#jump-toolbar {
+    margin-top: 15px;
+    color: #8b8b8b;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+
+#jump-toolbar .header {
+    padding: 7.5px;
+    text-align: center;
+    background-color: #EBEBEB;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#toolbar {
+    height: 100%;
+}
+
+.col-md-3 {
+    padding-left: 0;
+    float: left;
+}
+
+.col-md-9 {
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#jump-toolbar #ranks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fafafa;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .13);
+    padding: 15px;
+    padding-top: 7.5px;
+}
+
+#ranks .rank {
+    width: 100%;
+    text-align: center;
+    padding: 7.5px;
+    margin-top: 7.5px;
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.32), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#ranks > div {
+    width: 100%;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .13);
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 6px;
+}
+
+.rank.deactivated {
+    color: #636363 !important;
+    background-color: #EFEFEF !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+@media (max-width: 993px) {
+    #toolbar {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    .col-md-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .staff-member {
+        min-width: calc(50% - 15px);
+    }
+
+    .staff-member.small {
+        min-width: calc(50% - 15px);
+    }
+
+    #content {
+        padding-bottom: 0;
+    }
+}
+
+#languages .dropdown-menu {
+    width: calc(100% + 215px);
+    position: absolute;
+    left: -220px;
+    z-index:99;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.spin-that-shit {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*
+     FILE ARCHIVED ON 12:53:59 Aug 25, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:58:06 Feb 14, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 204.982
+  exclusion.robots: 0.095
+  exclusion.robots.policy: 0.086
+  cdx.remote: 0.062
+  esindex: 0.009
+  LoadShardBlock: 119.833 (3)
+  PetaboxLoader3.datanode: 128.856 (4)
+  CDXLines.iter: 15.947 (3)
+  load_resource: 113.725
+  PetaboxLoader3.resolve: 81.796
+*/

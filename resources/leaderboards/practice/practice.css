@@ -1,0 +1,109 @@
+#ladder-toggle {
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    margin: inherit;
+    transition: all 0.3s;
+}
+
+#ladder-toggle:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#elo-board .dropdown-menu {
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+    text-shadow: none;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 17px;
+    margin: 0 auto;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
+}
+
+.ladder-loader {
+    cursor: pointer;
+}
+/*
+     FILE ARCHIVED ON 12:53:59 Aug 25, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:19:38 Feb 14, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 210.244
+  exclusion.robots: 0.065
+  exclusion.robots.policy: 0.058
+  cdx.remote: 0.053
+  esindex: 0.008
+  LoadShardBlock: 162.254 (3)
+  PetaboxLoader3.datanode: 166.494 (4)
+  CDXLines.iter: 16.293 (3)
+  load_resource: 49.075
+  PetaboxLoader3.resolve: 25.986
+*/

@@ -1,0 +1,188 @@
+header {
+    background: transparent;
+}
+
+#content {
+    box-shadow: none;
+}
+
+footer a:hover {
+    color: #ece8f1;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#login-box {
+    background-color: white;
+    padding: 30px;
+    padding-top: 15px;
+    border-radius: 6px;
+    margin-top: 30px;
+    width: 450px;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .13);
+}
+
+#extras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 450px;
+}
+
+#extras > a {
+    flex: 1;
+    min-width: calc(50% - 7.5px);
+    display: block;
+    padding: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    text-transform: lowercase;
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .13);
+}
+
+#extras > a:first-child {
+    margin-right: 7.5px;
+    color: #2bb42b;
+}
+
+#extras > a:nth-child(2) {
+    margin-left: 7.5px;
+    color: #2c8ae1;
+}
+
+#login-box form button {
+    background-color: #d5ad32;
+    border: none;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.19), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+
+hr {
+    opacity: 0.5;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+#box input {
+    width: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    padding: 7.5px;
+    margin-top: 15px;
+    border: none;
+    outline: none !important;
+}
+
+#box input::placeholder {
+    font-weight: 600;
+    text-transform: lowercase;
+    color: #d4d4d4;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    text-indent: 20px;
+    margin: 0;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    font-weight: 800;
+    opacity: 0.33;
+    margin: 0;
+    font-size: 8px;
+}
+
+#content {
+    margin: 0;
+    background: none;
+}
+
+#wrapper {
+    padding: 0;
+}
+
+#header {
+    background: none;
+    padding: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background: none;
+}
+
+body {
+    background: url(../../../../resources/images/header-bg.png);
+    background-size: cover;
+}
+
+@media (max-height: 568px) {
+    h2, h1, footer {
+        display: none;
+    }
+
+    #box {
+        margin-top: 0px;
+    }
+}
+
+#languages .dropdown-menu {
+    width: calc(100% + 215px);
+    position: absolute;
+    left: -220px;
+    z-index:99;
+}
+
+.alert {
+    margin-bottom: 0;
+    text-align: center;
+}
+/*
+     FILE ARCHIVED ON 12:11:08 Jun 24, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:11:48 Feb 14, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 99.918
+  exclusion.robots: 0.091
+  exclusion.robots.policy: 0.082
+  cdx.remote: 0.071
+  esindex: 0.011
+  LoadShardBlock: 75.76 (3)
+  PetaboxLoader3.datanode: 133.543 (4)
+  CDXLines.iter: 14.065 (3)
+  load_resource: 124.207
+  PetaboxLoader3.resolve: 41.535
+*/

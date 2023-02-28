@@ -1,0 +1,367 @@
+#settings {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    padding: 0;
+    position: relative;
+}
+
+#settings li a {
+    color: inherit;
+    text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: block;
+}
+
+#settings li {
+    text-transform: uppercase;
+    color: #BEBEBE;
+    letter-spacing: 3px;
+    text-indent: 3px;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 11px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#settings li.active a {
+    color: #4A4A4A;
+    border-bottom: 2px solid #d5ad32;
+    padding-bottom: 14px;
+
+}
+
+#select {
+    background-color: #d5ad32;
+    padding: 15px;
+    padding-right: 5px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: white;
+    line-height: 15px;
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.19), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+}
+
+#select::after {
+    position: absolute;
+    content: ' ';
+    width: 2px;
+	height: 43px;
+    background: #d5ad32;
+    margin-top: -14px;
+    margin-left: 3px;
+    border-top: 1px solid rgba(255, 255, 255, 0.19);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+    z-index: 2;
+}
+
+#arrow {
+    float: right;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+    z-index:99;
+}
+
+#arrow::after {
+    content: "";
+    z-index:99;
+    position: absolute;
+    width: 50px;
+    height: 190px;
+    top: -23px;
+    background: #d5ad32;
+    transform: rotate(45deg); /* Prefixes... */
+    right: 82px;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.19), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+}
+
+#settings ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -45px;
+    flex: 1;
+    background-color: #F7F7F7;
+    padding-left: 22.5px;
+    border: 1px solid #EEEEEE;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#settings ul li {
+    display: inline-block;
+}
+
+#header h1 {
+    font-size: 2em;
+    margin-top: 25px;
+}
+
+#header h2 {
+    font-size: 0.7em;
+}
+
+.stat-board .heading {
+    padding: 7.5px 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: #271C30;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.19), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.stat-board table {
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    text-shadow: none;
+}
+
+.stat-board th {
+    padding: 7px;
+    color: #9A9A9A;
+    background-color: #E8E8E8;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-indent: 1.5px;
+    line-height: 10px;
+}
+
+.stat-board td {
+    padding: 5px;
+}
+
+.stat-board a {
+    color: #8E8E8E;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    letter-spacing: 0.5px;
+    text-indent: 0.5px;
+    align-items: center;
+}
+
+.stat-board-image {
+    margin-right: 5px;
+    min-height:16px;
+    min-width:16px;
+    max-width:16px;
+    max-height: 16px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.stat-board.loading .stat-board-image{
+    background: url('https://web.archive.org/web/20190825125359im_/https://visage.surgeplay.com/face/16/X-Steve') !important;
+}
+
+.stat-board tr td:first-child, .stat-board tr td:last-child {
+    font-weight: 900;
+    color: #8F8F8F;
+}
+
+.stat-board tbody tr:last-of-type td {
+    box-shadow: 0 1px 0px 0 rgba(0, 0, 0, .13);
+}
+
+.stat-board tbody tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 6px;
+}
+
+.stat-board tbody tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 6px;
+}
+
+.stat-board tr td {
+    background-color: #FAFAFA;
+}
+
+.stat-board tr:nth-child(even) td {
+    background-color: #F7F7F7;
+}
+
+.stat-board thead th:first-child {
+    text-align: center;
+}
+
+.stat-board tr td:first-child {
+    text-align: center;
+}
+
+.stat-board thead th:last-child {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.stat-board tr td:last-child {
+    text-align: right;
+    padding-right: 30px;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-indent: 1px;
+}
+
+.stat-board {
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+}
+
+.stat-board-parent {
+    padding-right: 0;
+}
+
+.col-md-12 .stat-board-parent:last-of-type{
+    padding-right: 15px;
+}
+
+.stat-board table tbody tr:first-child td:first-child div {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0.5px;
+    padding-bottom: 3.5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 14px;
+    border-radius: 100%;
+    background-color: #fbc233;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.19), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+}
+
+.stat-board table tbody tr:nth-child(2) td:first-child div {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0.5px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 14px;
+    border-radius: 100%;
+    background-color: #e2e2e4;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.19), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+}
+
+.stat-board table tbody tr:nth-child(3) td:first-child div {
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    padding-bottom: 4px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 14px;
+    border-radius: 100%;
+    background-color: #da7e4b;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.19), inset 0 0 0 2px rgba(255, 255, 255, 0.19);
+}
+
+@media (max-width: 768px) {
+    #arrow {
+        display: none;
+    }
+
+    #settings {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    #select {
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    #settings ul {
+        margin-left: 0;
+        margin-top: 15px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 0;
+        border-radius: 6px;
+    }
+
+    #settings ul li {
+
+    }
+
+    #header h1 {
+        font-size: 2em;
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+    #content > div:nth-child(2) > div > div:nth-child(1) > div {
+        margin-top: 15px;
+    }
+
+    .stat-board {
+        margin-right: 15px;
+    }
+
+    #content {
+        padding-bottom: 0;
+    }
+
+    .col-md-12 .stat-board-parent:last-of-type{
+        padding-right: 0;
+    }
+}
+
+.stat-board-username {
+    min-width: 130px;
+}
+
+#elo-board .heading {
+    max-height:50px;
+}
+
+.stat-board-image {
+    background-size: 16px 16px !important;
+}
+/*
+     FILE ARCHIVED ON 12:53:59 Aug 25, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:19:37 Feb 14, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 98.158
+  exclusion.robots: 0.122
+  exclusion.robots.policy: 0.112
+  cdx.remote: 0.081
+  esindex: 0.009
+  LoadShardBlock: 62.065 (3)
+  PetaboxLoader3.datanode: 86.475 (4)
+  CDXLines.iter: 15.307 (3)
+  load_resource: 107.637
+  PetaboxLoader3.resolve: 52.957
+*/

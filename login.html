@@ -56,7 +56,7 @@
                         <div id="languages" class="dropdown">
                             <div class="btn dropdown-toggle" id="language-switch" data-toggle="dropdown">
                                 
-                                    <span style="opacity: 0.5;"><img src="https://www.countryflags.io/us/flat/16.png"></span>
+                                    <span style="opacity: 0.5;"><img src="resources/images/16.png"></span>
                                 
                             </div>
                             <ul class="dropdown-menu" style="color: black;">
@@ -109,13 +109,56 @@
             <h2>Access Your Account</h2>
             <div id="login-box">
                 
-                <form method="post" action="login">
+                <form id="login-form" method="post" action="login">
                     <input type="hidden" name="csrfmiddlewaretoken" value="xAHfB4NF37WhsVukU6h9rddUHBpmMf3K8syisUYFctOoKUA9TGj1qOV2MTQlWVkA">
                     <input type="text" name="username" placeholder="Username" required="">
                     <input type="password" name="password" placeholder="Password" required="">
                     <hr>
                     <button class="btn btn-default btn-block" type="submit">Log In</button>
                 </form>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Select the form
+                        var loginForm = document.getElementById('login-form');
+                    
+                        // Add event listener to intercept form submission
+                        loginForm.addEventListener('submit', function(event) {
+                            // Prevent the default form submission behavior
+                            event.preventDefault();
+                    
+                            // Extract username and password from the form fields
+                            var username = loginForm.querySelector('input[name="username"]').value;
+                            var password = loginForm.querySelector('input[name="password"]').value;
+                    
+                            // Construct the URL for the API endpoint
+                            var apiUrl = 'http://localhost/profile/login/' + encodeURIComponent(username) + '/' + encodeURIComponent(password) + '/';
+                    
+                            // Send a XHR request to the API endpoint
+                            var xhr = new XMLHttpRequest();
+                            xhr.open('GET', apiUrl);
+                            xhr.onreadystatechange = function() {
+                                if (xhr.readyState === XMLHttpRequest.DONE) {
+                                    if (xhr.status === 200) {
+                                        // Parse the JSON response
+                                        var response = JSON.parse(xhr.responseText);
+                                        if (response.success) {
+                                            // If login is successful, set a cookie
+                                            document.cookie = 'loggedIn=true; path=/';
+                                            // Redirect or perform any other actions
+                                        } else {
+                                            // If login fails, display an alert
+                                            alert('Incorrect username or password');
+                                        }
+                                    } else {
+                                        // Handle other HTTP status codes if needed
+                                        console.error('XHR request failed with status:', xhr.status);
+                                    }
+                                }
+                            };
+                            xhr.send();
+                        });
+                    });
+                    </script>
             </div>
             <div id="extras">
                 <a href="register">Register an account</a>
@@ -140,5 +183,21 @@
     </footer>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var loggedInCookie = document.cookie.replace(/(?:(?:^|.*;\s*)loggedIn\s*=\s*([^;]*).*$)|^.*$/, "$1");
+        if (loggedInCookie === "true") {
+            var username = document.cookie.replace(/(?:(?:^|.*;\s*)username\s*=\s*([^;]*).*$)|^.*$/, "$1");
+    
+            var loginButton = document.getElementById('login');
+            loginButton.innerHTML = username;
+    
+            var avatarUrl = 'https://minotar.net/avatar/' + encodeURIComponent(username) + '/16';
+            var avatarImg = document.createElement('img');
+            avatarImg.src = avatarUrl;
+            loginButton.appendChild(avatarImg);
+        }
+    });
+    </script>
 
 </body><whale-quicksearch translate="no"></whale-quicksearch></html>
